@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style type="">
+        @import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+        /* Reset some default styles */
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+      /* background: rgb(202, 177, 231); */
+       background-color: #ebc0ff;
+      
+
+}
+
+/* Header styles */
+header {
+         
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 2px; */
+}
+
+/* Logo styles */
+.logo img {
+    max-width: 100%;
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+   
+
+}
+
+/* Main content styles */
+main {
+    /* padding: 20px; */
+    text-align: center;
+    /* position: absolute; */
+ 
+    
+   
+}
+
+.login-container {
+    max-width: 500px;
+    /* width: 500px; */
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 20px;
+     background-color: rgba(174, 137, 220, 0.5);
+     position: relative;
+   
+  
+    
+    
+    
+    
+}
+
+h1 {
+     font-size: 2em;
+  color: #000;
+  margin-top: 30px;
+}
+
+form {
+    text-align: left;
+}
+
+/* label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+} */
+
+input {
+    width: 100%;
+    
+    border: 1px solid #ccc;
+  
+  padding: 12px 20px;
+  margin-top: 40px;
+  background: transparent;
+  border: 2px solid #000;
+  border-radius: 40px;
+  font-size: 1.2em;
+ 
+  box-shadow: none;
+  outline: none;
+
+ 
+}
+
+input::placeholder{
+    color: rgba(0, 0, 0, 0.75);
+}
+/* placeholder ma icon */
+input[type="text"] {
+  font-family: "fontAwesome";
+}
+ input[type="email"] {
+  font-family: "fontAwesome";
+}
+input[type="number"] {
+  font-family: "fontAwesome";
+}
+
+/* number ma updown button hatauna */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+button {
+    /* background-color: #333;
+    max-width: 520px;
+     background: linear-gradient(45deg, #ff357a, #fff172);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+      
+    
+    color:black;
+    font-size: 1.2em;
+   */
+background: linear-gradient(45deg, #ff357a, #fff172);
+ color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    color:black;
+    font-size: 1.2em;
+   
+   
+    
+}
+
+ button:hover {
+  opacity: 0.8;
+  color: #1a53ff
+}
+
+
+    </style>
+    <title>Simple Login</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\Acer\Desktop\tailwind\Quiz-main\Images\quiz1.png" alt="Logo">
+        </div>
+    </header>
+    <main>
+        <div class="login-container">
+            <h1>Get Into Quiz</h1>
+            <form id="login-form">
+            
+                <input type="text" id="username" name="username" placeholder="&#Xf2bd Username" required>
+              
+                  <input type="number"  name="number" id="number"placeholder="&#xf2b9 PhoneNumber"/>
+                   <input type="email" id="email" name="email" placeholder="&#Xf0e0 Email" required>
+               <button type="submit">Start</button>
+                
+            </form>
+        </div>
+         <p id="error-message" class="error-message"></p>
+    </main>
+    <script>
+
+
+           const loginForm = document.getElementById('login-form');
+const errorMessage = document.getElementById('error-message');
+
+loginForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    
+    const username = loginForm.username.value;
+    const number = loginForm.number.value;
+    const email = loginForm.email.value;
+
+        window.location.href = 'index.html';
+    
+    //}
+});
+
+
+
+    </script>
+    
+</body>
+</html>
