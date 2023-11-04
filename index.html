@@ -14,11 +14,20 @@
   <body>
     <div class="logo">
       <a href="#">
-        <img src="./Images/logo.png" alt="LOGO" >
+        <img src="./Images/quiz1.png" alt="LOGO" >
       </a>
     </div>
-    <div class="start_btn">
-        <button>Start</button>
+    <div id="start_btn" class="start_btn">
+        <div class="login-container">
+            <h1>Get Into Quiz</h1>
+            <form id="login-form">
+                <input type="text" id="username" name="username" placeholder="&#Xf2bd Username" required>
+                <input type="number" name="number" id="number" placeholder="&#xf2b9 PhoneNumber" />
+                <input type="email" id="email" name="email" placeholder="&#Xf0e0 Email" required>
+                <button type="submit" id="login">Start</button>
+            </form>
+        </div>
+        <p id="error-message" class="error-message"></p>
     </div>
 
     <!-- Info Box -->

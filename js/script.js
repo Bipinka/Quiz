@@ -8,11 +8,22 @@ const option_list = document.querySelector(".option_list");
 const timeCount = quiz_box.querySelector(".timer .timer_sec");
 const timeLine = document.querySelector("header .time_line");
 const timeOff = document.querySelector("header .timer_text");
+const loginForm = document.getElementById("login-form");
+const errorMessage = document.getElementById("error-message");
 
 // If Start button clicked
-start_btn.onclick = () => {
-  info_box.classList.add("activeInfo");  // Show Info Box
-}
+
+// JavaScript to handle form submission and div visibility
+  document.getElementById("start_btn").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+
+    // Hide the registration div
+    document.getElementById("start_btn").style.display = "none";
+
+    // Show the next div
+    info_box.classList.add("activeInfo"); // Show Info Box
+  });
+
 
 // If Exit button clicked
 exit_btn.onclick = () => {

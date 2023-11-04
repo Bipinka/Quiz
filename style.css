@@ -24,6 +24,9 @@ body {
               0px 6px 20px 0 rgba(0, 0, 0, 0.19);  
               transition: all 0.3s ease;
 }
+.start_btn {
+  border-radius: 20px;
+}
 .info_box.activeInfo,
 .quiz_box.activeQuiz,
 .result_box.activeResult {
@@ -326,3 +329,137 @@ footer .quit:hover {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+
+@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
+        /* Reset some default styles */
+        /* Reset some default styles */
+        * {
+             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* font-family: Arial, sans-serif; */
+            /* background: rgb(202, 177, 231); */
+             background-color: #ebc0ff;
+        }
+
+        /* Header styles */
+        header {
+
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* padding: 2px; */
+        }
+
+        /* Logo styles */
+        .logo img {
+            max-width: 100%;
+            height: 200px;
+            width: auto;
+            border-radius: 50%;
+        }
+
+        /* Main content styles */
+        main {
+            /* padding: 20px; */
+            text-align: center;
+            /* position: absolute; */  
+        }
+
+        .login-container {
+            max-width: 500px;
+            /* width: 500px; */
+            height: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            /* border: 1px solid #ccc; */
+            border-radius: 20px;
+             background-color: rgba(174, 137, 220, 0.5);
+             position: relative;  
+        }
+
+        h1 {
+             font-size: 2em;
+          color: #000;
+          margin-top: 30px;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        /* label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        } */
+
+        input {
+            width: 100%;
+            border: 1px solid #ccc;
+            padding: 12px 20px;
+            margin-top: 40px;
+            background: transparent;
+            border: 2px solid #000;
+            border-radius: 40px;
+            font-size: 1.2em;
+            box-shadow: none;
+            outline: none;
+        }
+
+        input::placeholder{
+            color: rgba(0, 0, 0, 0.75);
+        }
+        /* placeholder ma icon */
+        input[type="text"] {
+          font-family: "Arial", "fontAwesome";
+        }
+         input[type="email"] {
+          font-family: "Arial","fontAwesome";
+        }
+        input[type="number"] {
+          font-family: "Arial","fontAwesome";
+        }
+
+        /* number ma updown button hatauna */
+        input[type="number"]::-webkit-inner-spin-button,
+        input[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          appearance: none;
+          margin: 0;
+        }
+
+        .login-container button {
+            /* background-color: #333;
+            max-width: 520px;
+             background: linear-gradient(45deg, #ff357a, #fff172);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            color:black;
+            font-size: 1.2em;
+           */
+            background: linear-gradient(45deg, #ff357a, #fff172);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            position: absolute;
+            bottom: 20px; /* Distance from the bottom */
+            right: 20px; /* Distance from the right */
+            color:black;
+            font-size: 1.2em;
+        }
+
+         .login-container button:hover {
+          opacity: 0.8;
+          color: #1a53ff
+        }
