@@ -134,13 +134,16 @@ function optionSelected(answer) {
   next_btn.style.display = "block";
 }
 
+
+// Results
+
 function showResultBox() {
   info_box.classList.remove("activeInfo");
   quiz_box.classList.remove("activeQuiz");
   result_box.classList.add("activeResult");  // Show Reults
   const scoreText = result_box.querySelector(".score_text");
   if (userScore >=8) {
-    scoreTag = '<span>Congratulation, You got <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>'
+    scoreTag = '<span>and You got <p>' + userScore + '</p> out of <p>' + questions.length + '</p></span>'
     scoreText.innerHTML = scoreTag;
   }
   else if (userScore >= 5) {

@@ -280,10 +280,6 @@ footer .quit:hover {
 }
 
 .result_box {
-  background: #fff;
-  width: 450px;
-  padding: 25px 30px;
-  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -291,22 +287,19 @@ footer .quit:hover {
   text-align: center;
   opacity: 0;
   pointer-events: none;
-  transform: translate(-50%, -50%) scale(0.9);
-}
-.result_box .icon {
-  font-size: 100px;
-  color: #ffc400;
-  margin-bottom: 10px;
+  /* transform: translate(-50%, -50%) scale(0.9); */
 }
 .result_box .complete_text {
   font-size: 20px;
   font-weight: 500;
+  margin-top: 15px;
 }
 .result_box .score_text span {
   display: flex;
-  margin: 10px 0;
+  margin: 10px 0; 
   font-size: 18px;
   font-weight: 500;
+  justify-content: center;
 }
 .score_text span p {
   font-weight: 600;
@@ -314,6 +307,7 @@ footer .quit:hover {
 }
 .result_box .buttons {
   display: flex;
+  justify-content: center;
   margin: 20px 0;
 }
 .result_box .buttons button {
@@ -328,6 +322,46 @@ footer .quit:hover {
   border: 1px solid #7a05ac;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+/* Congratulations */
+.congratulationBox {
+    width: 60vw;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2),
+              0px 6px 20px 0 rgba(0, 0, 0, 0.19);  
+              transition: all 0.3s ease;
+}
+.congratulationBox .curve {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, #8400ff, #d592e2);
+    border-radius: 0% 0% 50% 50%/0% 0% 100% 100%;
+    transform: scaleX(1.2);
+    position: relative;
+}
+.congratulationBox .curve .icon {
+    position: absolute;
+    transform: scaleX(0.85);
+}
+.congratulationBox .curve .icon .fa-award {
+    font-size: 170px;
+    margin-top: 220px;
+}
+.congratulationBox .curve .icon .fa-sun {
+    font-size: 170px;
+    margin-top: 195px;
+    color: #fbd203;
+}
+.congratulationBox .curve .icon .fa-star {
+    font-size: 50px;
+    margin-top: 250px;
+    color: #f7e692;
+}
+.congratulationBox h1 {
+  margin-top: 100px;
 }
 
 
@@ -426,3 +460,5 @@ input[type="number"]::-webkit-outer-spin-button {
   opacity: 0.8;
   color: #1a53ff
 }
+
+
